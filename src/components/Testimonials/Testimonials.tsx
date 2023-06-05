@@ -17,12 +17,12 @@ const testimonialsData = {
 }
 const Testimonials = () => {
     return (
-        <div className='flex flex-col justify-center items-center text-center pt-[111px] px-[20px] pb-[100px]'>
+        <div className='flex flex-col justify-center items-center text-center pt-[121px] sm:pt-[111px] px-[20px] pb-[100px]'>
             <TitleSubtitle title={testimonialsData.title} centered/>
-            <img className='mt-[90px]' src={ibmIcon} alt="IBM"/>
-            <h4 className='mt-[60px] font-bold mb-[62px] tex-[14px] leading-[17px] spaci max-w-[280px] sm:text-[28px] sm:leading-[40px] sm:max-w-[940px]'>{testimonialsData.testimonialText}</h4>
+            <img className='mt-[88px]' src={ibmIcon} alt="IBM"/>
+            <h4 className='mt-[60px] font-bold sm:font-normal mb-[62px] tex-[14px] leading-[17px] spaci max-w-[280px] sm:text-[28px] sm:leading-[40px] sm:max-w-[957px]'>{testimonialsData.testimonialText}</h4>
             <TestimonialUser {...testimonialsData.user}/>
-            <Button classNames='mt-[96px] py-[16px] px-[47px] text-white'>More Testimonials</Button>
+            <Button classNames='mt-[86px] py-[18px] px-[48px] font-bold text-white'>More Testimonials</Button>
         </div>
     );
 };

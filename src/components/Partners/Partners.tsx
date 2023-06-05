@@ -40,7 +40,7 @@ const partnersData = {
 }
 const Partners = () => {
     return (
-        <div className='px-[20px] mt-[182px] flex flex-col justify-center items-center w-full'>
+        <div className='px-[20px] pt-[60px] pb-[60px] sm:pt-[98px] sm:pb-[80px] flex flex-col justify-center items-center w-full'>
             <TitleSubtitle title={partnersData.title} subtitle={partnersData.subtitle} centered/>
             <div className='flex flex-col gap-[30px] max-h-[559px] overflow-hidden max-w-[1092px] flex-wrap mt-[91px] justify-center sm:max-h-max sm:flex-row sm:gap-0'>
                 {
@@ -49,7 +49,7 @@ const Partners = () => {
                     )
                 }
             </div>
-            <Button classNames='mt-[81px] mb-[80px] text-white py-[16px] px-[60px] font-bold leading-[28px]'>Try For Free</Button>
+            <Button classNames='mt-[87px] text-white py-[16px] px-[60px] font-bold leading-[28px]'>Try For Free</Button>
         </div>
     );
 };

@@ -31,18 +31,20 @@ const featureData = {
 
 const Features = () => {
     return (
-        <div className='px-[20px] mt-[136px] flex flex-col justify-center items-center w-full'>
+        <div className='px-[20px] pt-[110px] sm:pt-[126px] pb-[98px] sm:pb-[170px] flex flex-col justify-center items-center w-full'>
             <TitleSubtitle title={featureData.title} subtitle={featureData.subtitle} centered/>
-            <div className='flex gap-[75px] sm:gap-[52px] sm:flex-row flex-col mt-[90px] '>
-                {
-                    featureData.featureInfo.map( (info, index) =>
-                        <FeatureInfo key={index} {...info}/>
-                    )
-                }
-            </div>
-            <div className='mt-[132px] relative flex items-center justify-center'>
-                <img src={videoPreview} alt="video"/>
-                <img src={playButton} className='absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] h-1/4 cursor-pointer hover:opacity-95' alt="play"/>
+            <div className='flex flex-col-reverse sm:flex-col'>
+                <div className='flex gap-[75px] sm:gap-[52px] sm:flex-row flex-col mt-[90px] '>
+                    {
+                        featureData.featureInfo.map( (info, index) =>
+                            <FeatureInfo key={index} {...info}/>
+                        )
+                    }
+                </div>
+                <div className='mt-[74px] relative flex items-center justify-center'>
+                    <img src={videoPreview} alt="video"/>
+                    <img src={playButton} className='absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] h-1/4 cursor-pointer hover:opacity-95' alt="play"/>
+                </div>
             </div>
         </div>
     );

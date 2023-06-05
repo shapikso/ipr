@@ -11,7 +11,7 @@ const FeatureInfo = ({title, text, imgSrc}: IFeatureInfo) => {
         <div className='flex flex-col items-center gap-[20px] text-center px-[12px]'>
             <img src={imgSrc} alt="feature icon"/>
             <h3 className='text-[20px] font-bold leading-[28px] max-w-[207px]'>{title}</h3>
-            <p className='max-w-[231px] text-[18px]'>{text}</p>
+            <p className='max-w-[231px] text-[18px] leading-[25px]'>{text}</p>
         </div>
     );
 };

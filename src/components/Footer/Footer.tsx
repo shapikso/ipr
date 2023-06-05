@@ -61,7 +61,7 @@ const Footer = () => {
                 {footerData.info.map( ({text, icon}, index) => (
                     <div key={index} className='flex gap-[10px] items-center'>
                         {icon}
-                        <p className='leading-[27px] max-w-[240px] w-full'>{text}</p>
+                        <p className='leading-[27px] sm:max-w-[240px] w-full'>{text}</p>
                     </div>
                 ) )}
                 <SocialList className='h-[81px] justify-center sm:justify-start'/>

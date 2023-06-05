@@ -10,15 +10,14 @@ const organizeData = {
 
 const Organize = () => {
     return (
-        <div className='flex mt-[340px] px-[20px] pb-[58px] gap-[65px] sm:gap-[50px] sm:flex-row flex-col items-center justify-center '>
+        <div className='flex pt-[90px] sm:pt-[91px] px-[20px] pb-[80px] sm:pb-[222px] gap-[65px] sm:gap-[57px] sm:flex-row flex-col items-center justify-center '>
             <div className='text-center items-center justify-center sm:text-left sm:items-start sm:justify-items-start'>
                 <TitleSubtitle title={organizeData.title} subtitle={organizeData.subtitle} />
-                <Button classNames='mt-[70px] px-[60px] py-[16px] text-white mx-auto '>Try For Free</Button>
+                <Button classNames='mt-[70px] px-[60px] py-[16px] text-white mx-auto font-bold leading-[28px]'>Try For Free</Button>
             </div>
-            <div className='p-[11px]'>
+            <div className='p-[3px]'>
                 <img src={macbook} alt="computer"/>
             </div>
-
         </div>
     );
 };

@@ -24,12 +24,12 @@ const contactsUsInfoData = {
 
 const ContactsUsInfo = () => {
     return (
-        <div className='mt-[18x] flex-col-reverse sm:flex-col flex gap-[70px] px-[34px]'>
+        <div className='mt-[18px] flex-col-reverse sm:flex-col flex gap-[70px] px-[34px]'>
             <div className='flex flex-col gap-[30px] sm:flex-row sm:gap-[35px] justify-center sm:items-center'>
                 {contactsUsInfoData.info.map( ({text, icon}, index) => (
                     <div key={index} className='flex flex-row justify-items-start gap-5 sm:flex-col sm:text-center sm:items-center text-button-bg'>
-                        {icon}
-                        <p className='leading-[23px] max-w-[293px] text-black'>{text}</p>
+                        <div className='shrink-0'>{icon}</div>
+                        <p className='leading-[23px] max-w-[293px] text-black break-all'>{text}</p>
                     </div>
                 ) )}
             </div>

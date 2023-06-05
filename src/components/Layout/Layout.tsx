@@ -9,10 +9,8 @@ export interface LayoutProps {
 const Layout: FC<LayoutProps> = ({children}) => (
     <>
         <Header/>
-        <main className='overflow-hidden text-text-color font-graphik'>
-           <div className='max-w-[1440px] mx-auto'>
-               {children}
-           </div>
+        <main className='text-text-color font-graphik'>
+            {children}
         </main>
         <Footer/>
     </>
